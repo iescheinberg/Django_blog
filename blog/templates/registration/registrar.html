@@ -20,7 +20,10 @@
             <table class="container-fluid">{{ form }}</table>
         </div>
         <br><br>
-        <button type="submit" class="btn btn-success btn-lg px-3">Registrar</button>
+        <button type="submit" class="btn btn-success btn-lg px-3">
+            <a href="{% url 'register' %}">Registrar</a>
+        </button>
+        <p>¿Olvidaste tu contraseña?<a href="{% url 'password_reset' %}">Recupérala aquí</a></p>
     </form>
 
 </center>
